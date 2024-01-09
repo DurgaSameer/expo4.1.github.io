@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Music Player</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Welcome to Your Website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .option {
+      margin: 20px;
+    }
+
+    .option a {
+      text-decoration: none;
+      padding: 12px 24px;
+      border: 2px solid #4caf50;
+      border-radius: 6px;
+      color: #4caf50;
+      font-size: 18px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .option a:hover {
+      background-color: #4caf50;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front">
-                <img class="photo" src="faculty\bg1front.jpg" alt="Teacher's Photo">
-            </div>
-            <div class="card-back">
-                <h3 id="greet">Happy Teacher's Day !</h3>
-                <div id="pic">
-                    <img src="faculty\Ruchika mam.PNG" alt="">
-                </div>
-                <h3 id="title_name"> <span id="Iname">Mrs</span> <span id="name">Ruchika Mam</span> <span>!</span></h3>
-                <!-- <p>Thank you for your dedication and guidance.</p>
-            <p>You are truly appreciated!</p> -->
-            <p id="msg">Thank you for being our teacher, inspiring us with knowledge and being a valuable resource in our classroom.</p>
-           
 
-            </div>
-        </div>
-       
+  <div class="container">
+    <h1>Welcome to Your Website</h1>
 
-
-
-
-
-    <div class="container">
-        
-        <button id="playButton">Play Music</button>
+    <div class="options">
+      <div class="option">
+        <a href="Tday.html">Previous Website</a>
+      </div>
+      <div class="option">
+        <a href="GR.html">Generate Referral Code</a>
+      </div>
     </div>
-    <audio id="music" controls>
-        <source src="songs/Ruchika mam.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    <script src="script.js"></script>
-    
-    </body>
+  </div>
+
+</body>
 </html>

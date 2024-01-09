@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Generate Referral Code</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .codeBox {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 24px;
+      max-width: 400px;
+      margin: 20px;
+    }
+
+    #referralCode {
+      display: none;
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    #claimMessage {
+      display: none;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="codeBox">
+    <h1>Referral Code Generator</h1>
+    <p id="referralCode">Generate Your Referral Code</p>
+    <button id="generateBtn">Generate Referral Code</button>
+    <p id="claimMessage">Claim it</p>
+  </div>
+
+  <script>
+    document.getElementById('generateBtn').addEventListener('click', function() {
+      const referralCodeVar = "Ruchi45"; // Replace this with your variable
+      
+      // Display the referral code
+      const referralCodeElement = document.getElementById('referralCode');
+      referralCodeElement.innerText = referralCodeVar;
+      referralCodeElement.style.display = 'block';
+      
+      // Hide the "Generate Referral Code" button
+      document.getElementById('generateBtn').style.display = 'none';
+      
+      // Display the "Claim it" message
+      document.getElementById('claimMessage').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
